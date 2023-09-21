@@ -1,0 +1,165 @@
+:root {
+    --main-bg-color: rgb(32, 94, 187);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-all-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    height: 16%;
+    width: 100%;
+    position: fixed;
+    z-index: +1;
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    padding: 8px 10px;
+}
+
+.logotext {
+    width: 656px;
+    height: 81px;
+    padding: 3px 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(240, 230, 240);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+
+.container {
+    min-height: calc(100vh - 106px - 26vh);
+    background-color: beige;
+}
+
+.content {
+    color: #063333;
+    padding: 12px 0px 18px 491px;
+}
+
+.contenthead {
+    display: flex;
+    color: #191970;
+}
+
+.contentsmallhead {
+    color: #191970;
+    font-weight: bolder;
+}
+
+h1 {
+    margin: 0vh 0 0vh -5vh;
+    padding: 6vh;
+}
+
+.end {
+    background-color: #101f2e;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+footer {
+    height: 18vh;
+    color: beige;
+    background-color: var(--main-bg-color);
+}
+
+.footertext {
+    width: 660px;
+    height: 69px;
+    padding: 25px;
+}
+
+@media only screen and (max-width:800px) {
+    header {
+        background-color: var(--main-bg-color);
+        height: 25vh;
+    }
+
+    .logo img {
+        width: 129px;
+        height: 82px;
+        padding: 4px 0px;
+    }
+
+    .logotext {
+        width: 391px;
+    }
+
+    nav {
+        flex-direction: column;
+        color: #101f2e;
+
+    }
+
+    ul {
+        font-size: x-small;
+        margin-top: -52px;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0 12px;
+    }
+
+    .container {
+
+        background-color: rgb(225, 252, 245);
+        min-height: calc(100vh - 58px - 29vh);
+    }
+
+    .content {
+
+        padding: 0px 19px 0 41px;
+    }
+
+    .flex-all-centre {
+        flex-direction: column;
+    }
+
+    .footertext {
+        width: 338px;
+        height: 91px;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,372 @@
+:root {
+    --main-bg-color: rgb(32, 94, 187);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-all-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    height: 16%;
+    width: 100%;
+    position: fixed;
+    z-index: +1;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    padding: 8px 10px;
+}
+
+.logotext {
+    width: 656px;
+    height: 81px;
+    padding: 3px 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(240, 230, 240);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+
+.container {
+    min-height: calc(100vh - 58px - 25vh);
+    background-color: beige;
+}
+
+.slider {
+    width: 82vw;
+    margin: 25px 0px 32px 75px;
+}
+
+.content {
+    color: #063333;
+    background-color: rgb(247, 228, 203);
+    margin-top: 104px;
+    padding-top: 10vh;
+    text-align: center;
+    width: 100%;
+}
+
+.list {
+    text-align: left;
+    margin-left: 580px;
+}
+
+
+.chancellor {
+    display: flex;
+    margin: 10px;
+}
+
+.c1 {
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c2 {
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bca {
+    background-color: rgb(243, 241, 236);
+    width: 100%;
+    padding-top: 6vh;
+}
+
+u {
+    color: #042929;
+    font-size: large;
+    font-weight: bold;
+}
+
+.effect {
+    display: flex;
+    padding-top: 23px;
+}
+
+li {
+    color: #154447;
+    padding-left: 5vh;
+}
+
+.pic {
+    display: inline-block;
+    padding-right: 3vw;
+}
+
+.note {
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.13);
+    background: #101f2e;
+    color: #fff;
+}
+
+p {
+    font-weight: bold;
+}
+
+
+.notes {
+    margin: 2%;
+    width: 15%;
+}
+
+.container2 {
+    background-color: rgb(250, 228, 202);
+    display: flex;
+    padding: 2vh;
+}
+
+.paper {
+    padding: 2vh 3vw;
+}
+
+.end {
+    background-color: #101f2e;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+footer {
+    height: 18vh;
+    color: beige;
+    background-color: var(--main-bg-color);
+}
+
+.footertext {
+    width: 660px;
+    height: 69px;
+    padding: 25px;
+}
+
+@media only screen and (max-width:800px) {
+    header {
+        background-color: var(--main-bg-color);
+        height: 25vh;
+    }
+
+    .logo img {
+        width: 129px;
+        height: 82px;
+        padding: 4px 0px;
+    }
+
+    .logotext {
+        width: 391px;
+    }
+
+    nav {
+        flex-direction: column;
+        color: #101f2e;
+        margin-right: 62px;
+    }
+
+    ul {
+        font-size: x-small;
+        margin-top: -72px;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0 12px;
+    }
+
+    .container {
+
+        background-color: rgb(225, 252, 245);
+        min-height: calc(100vh - 58px - 29px);
+        margin: 0 0 0 0;
+    }
+
+
+    .content {
+
+        background-color: rgb(162, 250, 221);
+        margin-top: 133px;
+        padding: 37px;
+        font-size: smaller;
+
+    }
+
+    h1 {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .kutext {
+        font-size: small;
+    }
+
+    .list {
+        margin-left: 73px;
+        margin-top: 3px;
+    }
+
+    .chancellor {
+        flex-direction: column;
+
+    }
+
+    .c1 {
+        font-weight: bold;
+        margin-left: 8px;
+        margin-right: auto;
+
+    }
+
+    .c2 {
+        font-weight: bold;
+        margin-left: 8px;
+        margin-right: auto;
+
+    }
+
+    h3 {
+        font-size: medium;
+        font-weight: 100;
+        padding: 5px 0px 6px 108px;
+
+    }
+
+    .slider {
+        margin: 15px 0px 13px;
+    }
+
+    .bca {
+        background-color: rgb(255, 254, 239);
+        padding: 15px 17px 0px 17px;
+    }
+
+    .effect {
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+        color: #052229;
+    }
+
+    .pic {
+        display: none;
+    }
+    .container2 {
+        background-color: rgb(225, 255, 246);
+        display: flex;
+        flex-direction: column;
+        padding-left: 157px;
+    }
+
+    p {
+        font-size: x-small;
+
+    }
+
+    .paper {
+        padding: 12px 3px;
+    }
+
+    .flex-all-centre {
+        flex-direction: column;
+    }
+
+    .footertext {
+        width: 338px;
+        height: 91px;
+        padding: 0px;
+    }
+
+}
+.notes img{
+    height: 24vh;
+    width: 24vh;
+}
+.box1 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box2 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box3 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box4 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box5 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box6 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box7 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.box8 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box9 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}

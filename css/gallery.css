@@ -1,0 +1,243 @@
+:root {
+    --main-bg-color: rgb(32, 94, 187);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-all-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    height: 16%;
+    width: 100%;
+    position: fixed;
+    z-index: +1;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    padding: 8px 10px;
+}
+
+.logotext {
+    width: 656px;
+    height: 81px;
+    padding: 3px 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(240, 230, 240);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+.container {
+    min-height: calc(100vh - 130px - 14vh);
+    background-color: beige;
+
+}
+
+.contenthead {
+    display: flex;
+    color: #191970;
+    margin: 16vh 0px 0vh -2vh;
+}
+
+.contentsmallhead {
+    color: #10105c;
+    padding-top: 3vh;
+}
+
+h1 {
+    padding-top: 6vh;
+}
+
+.content {
+    color: #063333;
+    margin: 21px;
+    padding: 12px 29px 18px 96px;
+}
+
+.box1 {
+    background-color: black;
+    margin: 1vh 0 3vh -6vh;
+    font-size: x-large;
+    font-weight: bold;
+    color: antiquewhite;
+    display: flex;
+}
+
+.box2 {
+    background-color: black;
+    margin: 1vh 0 3vh -6vh;
+    font-size: x-large;
+    font-weight: bold;
+    color: antiquewhite;
+    display: flex;
+}
+
+.box3 {
+    background-color: black;
+    margin: 1vh 0 3vh -6vh;
+    font-size: x-large;
+    font-weight: bold;
+    color: antiquewhite;
+    display: flex;
+}
+
+.box4 {
+    background-color: black;
+    margin: 1vh 0 3vh -6vh;
+    padding: 9vh;
+    font-size: x-large;
+    font-weight: bold;
+    color: antiquewhite;
+    display: flex;
+}
+
+.effect {
+    margin: 0vh 185px 13px 67px;
+    padding: 0vh 12px 14px 8px;
+}
+
+.end {
+    background-color: #101f2e;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+footer {
+    height: 18vh;
+    color: beige;
+    background-color: var(--main-bg-color);
+}
+
+.footertext {
+    width: 660px;
+    height: 69px;
+    padding: 25px;
+}
+
+
+@media only screen and (max-width:800px) {
+    header {
+        background-color: var(--main-bg-color);
+        height: 25vh;
+    }
+
+    .logo img {
+        width: 129px;
+        height: 65px;
+        margin-top: 21px;
+    }
+
+    .logotext {
+        width: 391px;
+    }
+
+    nav {
+        flex-direction: column;
+        color: #101f2e;
+
+    }
+
+    ul {
+        font-size: x-small;
+        margin-top: -72px;
+        margin-right: 345px;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0 12px;
+    }
+
+    .container {
+
+        background-color: rgb(225, 252, 245);
+        margin: -21px -282px 0 0;
+    }
+
+    .content {
+        color: #063333;
+        padding: 12px 0px 18px 0px;
+    }
+
+    .contenthead {
+        display: flex;
+        color: #f328a5;
+        margin: 19vh 0px -1vh 9vh
+    }
+
+    .box1 {
+        flex-direction: column;
+        padding-left: 37px;
+    }
+
+    .box2 {
+        flex-direction: column;
+        margin: 0px 0 0px -220px;
+        padding-left: 37px;
+    }
+
+    .box3 {
+        flex-direction: column;
+        margin: 0px 0px 0px -198px;
+        padding-left: 37px;
+    }
+
+    .box4 {
+        flex-direction: column;
+        margin: 0px 0px 0px -156px;
+        padding-left: 37px;
+    }
+
+    .flex-all-centre {
+        flex-direction: column;
+        margin-right: -283px;
+    }
+
+    .end {
+        margin-right: -283px;
+    }
+
+    .footertext {
+        width: 338px;
+        height: 91px;
+        padding: 0px;
+    }
+}

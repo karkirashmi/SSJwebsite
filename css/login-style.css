@@ -1,0 +1,40 @@
+Body {
+    background-color: #F4A460;
+}
+
+button {
+    background-color: #E6E6FA;
+    width: 100%;
+    color: BLUE;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 25px;
+    background-color: beige;
+}
+
+.btn {
+    width: auto;
+    padding: 10px 18px;
+    margin: 10px 5px;
+    border: 1px solid blue;
+}
+
+.fcontrol input:focus {
+    outline: 0;
+    border-color: rgb(0, 187, 255);
+}
